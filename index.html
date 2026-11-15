@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fetalna ehokardiografija – srce koje vidimo prije rođenja</title>
+<meta name="description" content="Fetalna ehokardiografija omogućuje da se prirođene srčane greške prepoznaju još tijekom trudnoće. Stranica Tečaja fetalne ehokardiografije – u pripremi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#FFFFFF;background:#07131F}
+html{scroll-behavior:smooth}
+a{color:#FF8F8F}a:hover{color:#FFB3B3}
+@keyframes beat{0%,45%,100%{transform:scale(1)}8%{transform:scale(1.1)}16%{transform:scale(1)}26%{transform:scale(1.06)}36%{transform:scale(1)}}
+@keyframes sweep{from{transform:rotate(-27deg)}to{transform:rotate(27deg)}}
+@keyframes echo{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes travel{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes rise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+@keyframes drop{0%{top:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.heart{transform-box:fill-box;transform-origin:center;animation:beat 1.6s ease-in-out infinite}
+@keyframes halo{0%{transform:scale(1);opacity:.8}100%{transform:scale(4.5);opacity:0}}
+@keyframes sway{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.tiny{transform-box:fill-box;transform-origin:center;animation:beat .9s ease-in-out infinite}
+.halo{transform-box:fill-box;transform-origin:center;animation:halo 1.8s ease-out infinite}
+.halo2{animation-delay:.9s}
+.sway{transform-box:fill-box;transform-origin:center;animation:sway 5s ease-in-out infinite alternate}
+.beam{transform-origin:200px 20px;animation:sweep 3.4s ease-in-out infinite alternate}
+.arc1{animation:echo 2.4s ease-in-out infinite}
+.arc2{animation:echo 2.4s ease-in-out .4s infinite}
+.arc3{animation:echo 2.4s ease-in-out .8s infinite}
+.pulse-line{stroke-dasharray:14 86;animation:travel 3.2s linear infinite}
+.in1{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.in2{animation:rise .9s cubic-bezier(.2,.7,.2,1) .15s both}
+.in3{animation:rise .9s cubic-bezier(.2,.7,.2,1) .3s both}
+.in4{animation:rise .9s cubic-bezier(.2,.7,.2,1) .45s both}
+.ring{animation:ring 1.8s ease-out infinite}
+.drop{animation:drop 5s linear infinite}
+.card{transition:transform .35s ease,border-color .35s ease}
+.card:hover{transform:translateY(-6px);border-color:#FF7A7A}
+.btn{transition:transform .25s ease,background-color .25s ease}
+.btn:hover{transform:translateY(-2px)}
+@supports (animation-timeline: view()){
+.rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation:none!important;transition:none!important}
+html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #07131F; font-family: Inter, system-ui, sans-serif; color: #FFFFFF; line-height: 1.6; font-size: 17px; overflow-x: hidden">
+
+<header style="background: #07131F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="#vrh" style="display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none; min-height: 44px">
+<svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="#FF7A7A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 35 C 5 24 2 14 8 9 C 12 5 18 7 20 12 C 22 7 28 5 32 9 C 38 14 35 24 20 35 Z"></path><path class="tiny" d="M20 25 C 15 21.5 14 18.5 15.8 16.8 C 17.2 15.4 19.3 16.1 20 17.9 C 20.7 16.1 22.8 15.4 24.2 16.8 C 26 18.5 25 21.5 20 25 Z" fill="#FF7A7A" stroke="none"></path></svg>
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 17px; line-height: 1.25">Fetalna ehokardiografija</span>
+</a>
+<nav aria-label="Glavna navigacija" style="display: flex; flex-wrap: wrap; gap: 4px 8px">
+<a href="#sto-je" style="color: #C9D5E0; text-decoration: none; padding: 10px 12px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">O pregledu</a>
+<a href="#zasto" style="color: #C9D5E0; text-decoration: none; padding: 10px 12px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">Zašto edukacija</a>
+<a href="#plan" style="color: #C9D5E0; text-decoration: none; padding: 10px 12px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">Plan razvoja</a>
+<a href="#o-tecaju" style="color: #C9D5E0; text-decoration: none; padding: 10px 12px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">Tečaj</a>
+<a href="#kontakt" style="color: #C9D5E0; text-decoration: none; padding: 10px 12px; font-size: 15px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">Kontakt</a>
+</nav>
+</div>
+</header>
+
+<section id="vrh" style="background: #07131F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 56px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 56px">
+<div style="flex: 999 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<span class="in1" style="align-self: flex-start; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #FFB3B3; border: 1px solid #5A2A33; border-radius: 999px; padding: 8px 16px">
+<span style="position: relative; width: 8px; height: 8px; display: block"><span class="ring" style="position: absolute; inset: 0; border-radius: 999px; background: #FF7A7A; display: block"></span><span style="position: absolute; inset: 0; border-radius: 999px; background: #FF7A7A; display: block"></span></span>
+Stranica u pripremi
+</span>
+<h1 class="in2" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(44px, 8vw, 96px); line-height: 0.98; letter-spacing: -0.03em">Srce koje vidimo <span style="color: #FF7A7A">prije rođenja</span></h1>
+<p class="in3" style="margin: 0; font-size: clamp(18px, 2.2vw, 22px); color: #C9D5E0; max-width: 32em">Fetalna ehokardiografija omogućuje da se prirođene srčane greške prepoznaju još tijekom trudnoće. Gradimo mjesto znanja, edukacije i podrške – za liječnike, roditelje i sve koji skrbe o najmanjim srcima.</p>
+<div class="in4" style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="#plan" style="background: #C92C3C; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: flex; align-items: center">Što možete očekivati</a>
+<a class="btn" href="#sto-je" style="background: transparent; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 16px 28px; border-radius: 999px; border: 1px solid #6F8399; min-height: 52px; box-sizing: border-box; display: flex; align-items: center">O pregledu</a>
+</div>
+</div>
+<div class="in3" style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: center">
+<svg aria-hidden="true" viewBox="0 0 400 350" style="width: 100%; max-width: 480px; height: auto" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M200 20 L40 290 A 314 314 0 0 0 360 290 Z" fill="#0D2236" stroke="#24405A" stroke-width="2"></path>
+<path class="arc1" d="M152 100 A 94 94 0 0 0 248 100" stroke="#3C6182" stroke-width="2"></path>
+<path class="arc2" d="M116 162 A 164 164 0 0 0 284 162" stroke="#3C6182" stroke-width="2"></path>
+<path class="arc3" d="M80 224 A 236 236 0 0 0 320 224" stroke="#3C6182" stroke-width="2"></path>
+<path class="beam" d="M200 20 L188 330 L212 330 Z" fill="#FF7A7A" opacity="0.16"></path>
+<g class="sway">
+<path d="M168 170 C 148 200 154 264 200 288 C 246 264 252 200 232 170 Z" fill="#16304A" stroke="#C9D5E0" stroke-width="3"></path>
+<path d="M166 184 C 186 200 214 200 234 184" stroke="#C9D5E0" stroke-width="2.5"></path>
+<circle cx="200" cy="146" r="36" fill="#16304A" stroke="#C9D5E0" stroke-width="3"></circle>
+<path d="M200 110 c -3 -11 9 -13 8 -4" stroke="#C9D5E0" stroke-width="2.5"></path>
+<path d="M181 148 q7 7 14 0" stroke="#C9D5E0" stroke-width="2.5"></path>
+<path d="M205 148 q7 7 14 0" stroke="#C9D5E0" stroke-width="2.5"></path>
+<path d="M193 163 q7 5 14 0" stroke="#C9D5E0" stroke-width="2.5"></path>
+<circle cx="177" cy="160" r="4.5" fill="#FF7A7A" opacity="0.45"></circle>
+<circle cx="223" cy="160" r="4.5" fill="#FF7A7A" opacity="0.45"></circle>
+<circle class="halo" cx="200" cy="220" r="12" stroke="#FF7A7A" stroke-width="2"></circle>
+<circle class="halo halo2" cx="200" cy="220" r="12" stroke="#FF7A7A" stroke-width="2"></circle>
+<path class="tiny" d="M200 232 C 186 222 183 213 188 208 C 192 204 198 206 200 211 C 202 206 208 204 212 208 C 217 213 214 222 200 232 Z" fill="#FF7A7A"></path>
+</g>
+</svg>
+</div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1200 70" preserveAspectRatio="none" style="display: block; width: 100%; height: 70px" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 40 H180 L196 40 L206 14 L220 62 L232 40 H420 L436 40 L446 14 L460 62 L472 40 H660 L676 40 L686 14 L700 62 L712 40 H900 L916 40 L926 14 L940 62 L952 40 H1200" stroke="#1C3550" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<path class="pulse-line" pathLength="100" d="M0 40 H180 L196 40 L206 14 L220 62 L232 40 H420 L436 40 L446 14 L460 62 L472 40 H660 L676 40 L686 14 L700 62 L712 40 H900 L916 40 L926 14 L940 62 L952 40 H1200" stroke="#FF7A7A" stroke-width="2.5" vector-effect="non-scaling-stroke"></path>
+</svg>
+</section>
+
+<section aria-label="Ključne činjenice" style="background: #07131F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px">
+<div class="rv card" style="flex: 1 1 280px; min-width: 0; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(36px, 5vw, 52px); font-weight: 700; line-height: 1; color: #FF7A7A">oko 1 od 100</span>
+<span style="font-size: 16px; color: #C9D5E0">djece rađa se s prirođenom srčanom greškom – to su najčešće prirođene anomalije.</span>
+</div>
+<div class="rv card" style="flex: 1 1 280px; min-width: 0; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(36px, 5vw, 52px); font-weight: 700; line-height: 1; color: #FF7A7A">većina</span>
+<span style="font-size: 16px; color: #C9D5E0">srčanih grešaka javlja se u trudnoćama bez poznatih čimbenika rizika – zato je važan pregled srca kod svake trudnice.</span>
+</div>
+<div class="rv card" style="flex: 1 1 280px; min-width: 0; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(36px, 5vw, 52px); font-weight: 700; line-height: 1; color: #FF7A7A">2. tromjesečje</span>
+<span style="font-size: 16px; color: #C9D5E0">razdoblje je u kojem se srce djeteta najčešće detaljno pregledava ultrazvukom.</span>
+</div>
+</div>
+</section>
+
+<section id="sto-je" style="background: #F4F6F8; color: #0B1D2E; border-radius: 40px 40px 0 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B4232F">O pregledu</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.02em; max-width: 18em">Ultrazvučni pregled srca djeteta dok je još u majčinoj utrobi</h2>
+<p style="margin: 0; max-width: 40em; font-size: 18px; color: #33475B">Fetalna ehokardiografija je detaljan ultrazvučni pregled kojim se tijekom trudnoće procjenjuju građa srca, protok krvi i srčani ritam djeteta. Izvodi se kao i svaki ultrazvuk u trudnoći, bezbolan je i nema poznatih rizika za majku ni dijete.</p>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 24px">
+<li class="rv card" style="flex: 1 1 280px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 64px; font-weight: 700; line-height: 1; color: #B4232F">01</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.2">Probir na redovitom ultrazvuku</h3>
+<p style="margin: 0; color: #33475B; font-size: 16px">Liječnik koji vodi trudnoću pregledava srce u nekoliko standardnih presjeka – četiri srčane šupljine i izlaze velikih krvnih žila.</p>
+</li>
+<li class="rv card" style="flex: 1 1 280px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 64px; font-weight: 700; line-height: 1; color: #B4232F">02</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.2">Detaljan pregled kod stručnjaka</h3>
+<p style="margin: 0; color: #33475B; font-size: 16px">Ako postoji sumnja ili povećan rizik, trudnica se upućuje na fetalnu ehokardiografiju kod liječnika posebno educiranog za fetalno srce.</p>
+</li>
+<li class="rv card" style="flex: 1 1 280px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 64px; font-weight: 700; line-height: 1; color: #B4232F">03</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.2">Plan za porod i liječenje</h3>
+<p style="margin: 0; color: #33475B; font-size: 16px">Kada je dijagnoza poznata prije rođenja, obitelj i liječnički tim mogu na vrijeme dogovoriti mjesto poroda i skrb koja djetetu treba odmah nakon rođenja.</p>
+</li>
+</ol>
+<p class="rv" style="margin: 0; max-width: 40em; font-size: 15px; color: #4A5D70">Važno je znati: neke se srčane greške ne mogu vidjeti prije rođenja, čak ni fetalnom ehokardiografijom. O svakom nalazu razgovarajte sa svojim liječnikom.</p>
+</div>
+</section>
+
+<section id="zasto" style="background: #C92C3C; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 40px 72px">
+<div class="rv" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(56px, 10vw, 120px); font-weight: 700; line-height: 0.95; letter-spacing: -0.03em">13 – 87 %</span>
+<span style="font-size: 15px; color: #FFE3E5; max-width: 26em">Raspon udjela kritičnih srčanih grešaka otkrivenih prije rođenja, ovisno o zemlji i programu praćenja (međunarodna studija, 2019.).</span>
+</div>
+<div class="rv" style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #FFE3E5">Zašto edukacija</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.02em">Hoće li se greška otkriti na vrijeme, ovisi o znanju i iskustvu</h2>
+<p style="margin: 0; max-width: 36em; font-size: 18px">Uspješnost prenatalnog otkrivanja srčanih grešaka jako se razlikuje od sredine do sredine. Ovisi o opremi, o organizaciji probira i – ponajviše – o edukaciji liječnika koji pregledavaju trudnice. Upravo zato postoji Tečaj fetalne ehokardiografije.</p>
+</div>
+</div>
+</section>
+
+<section id="plan" style="background: #07131F; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #FF8F8F">Plan razvoja</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.02em; max-width: 16em">Što možete očekivati – korak po korak</h2>
+<p style="margin: 0; max-width: 38em; font-size: 18px; color: #C9D5E0">Ne želimo sve odjednom. Stranicu razvijamo postupno, pažljivo i promišljeno, u tri faze – da tijekom cijele godine bude mjesto edukacije, razmjene iskustava i podrške.</p>
+</div>
+
+<div style="position: relative; display: flex; flex-direction: column; gap: 32px; padding-left: 56px">
+<div aria-hidden="true" style="position: absolute; left: 19px; top: 8px; bottom: 8px; width: 2px; background: #1C3550">
+<span class="drop" style="position: absolute; left: -4px; width: 10px; height: 10px; border-radius: 999px; background: #FF7A7A; display: block"></span>
+</div>
+
+<article class="rv card" style="position: relative; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 20px 48px">
+<span aria-hidden="true" style="position: absolute; left: -47px; top: 34px; width: 22px; height: 22px; display: block"><span class="ring" style="position: absolute; inset: 0; border-radius: 999px; background: #FF7A7A; display: block"></span><span style="position: absolute; inset: 0; border-radius: 999px; background: #FF7A7A; border: 4px solid #07131F; box-sizing: border-box; display: block"></span></span>
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #07131F; background: #FF8F8F; border-radius: 999px; padding: 5px 12px">Faza 1 · Počinjemo</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(24px, 3vw, 32px); font-weight: 700; line-height: 1.15">Javna stranica</h3>
+<p style="margin: 0; color: #C9D5E0; font-size: 16px">Temelj svega: javno dostupne informacije za sve.</p>
+</div>
+<ul style="flex: 2 1 360px; min-width: 0; margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #DCE4EC; font-size: 16px">
+<li>Informacije o tečaju i prikaz njegovih aktivnosti</li>
+<li>Edukativni sadržaji o prirođenim srčanim greškama</li>
+<li>Suradnja s udrugom „Veliko srce malom srcu“</li>
+<li>Informacije za roditelje</li>
+<li>Arhiva prethodnih edukacijskih aktivnosti</li>
+</ul>
+</article>
+
+<article class="rv card" style="position: relative; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 20px 48px">
+<span aria-hidden="true" style="position: absolute; left: -47px; top: 34px; width: 22px; height: 22px; border-radius: 999px; background: #07131F; border: 2px solid #6F8399; box-sizing: border-box; display: block"></span>
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9D5E0; border: 1px solid #3C6182; border-radius: 999px; padding: 5px 12px">Faza 2 · Slijedi</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(24px, 3vw, 32px); font-weight: 700; line-height: 1.15">Za roditelje i obitelji</h3>
+<p style="margin: 0; color: #C9D5E0; font-size: 16px">Podrška obiteljima djece s prirođenim srčanim greškama.</p>
+</div>
+<ul style="flex: 2 1 360px; min-width: 0; margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #DCE4EC; font-size: 16px">
+<li>Edukativni materijali</li>
+<li>Odgovori na često postavljana pitanja</li>
+<li>Iskustva roditelja</li>
+<li>Informacije o mogućnostima liječenja</li>
+<li>Povezivanje s udrugama i drugim oblicima podrške</li>
+</ul>
+</article>
+
+<article class="rv card" style="position: relative; background: #0D2236; border: 1px solid #1C3550; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 20px 48px">
+<span aria-hidden="true" style="position: absolute; left: -47px; top: 34px; width: 22px; height: 22px; border-radius: 999px; background: #07131F; border: 2px solid #6F8399; box-sizing: border-box; display: block"></span>
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #C9D5E0; border: 1px solid #3C6182; border-radius: 999px; padding: 5px 12px">Faza 3 · Vizija</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(24px, 3vw, 32px); font-weight: 700; line-height: 1.15">Za stručnjake</h3>
+<p style="margin: 0; color: #C9D5E0; font-size: 16px">Prenatalna dijagnostika, fetalna medicina, pedijatrijska kardiologija i srodna područja.</p>
+</div>
+<ul style="flex: 2 1 360px; min-width: 0; margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #DCE4EC; font-size: 16px">
+<li>Trajna stručna edukacija</li>
+<li>Pristup edukativnim materijalima i predavanjima</li>
+<li>Razmjena iskustava i prikaz složenih slučajeva</li>
+<li>Stručna suradnja i telemedicinska komunikacija</li>
+</ul>
+</article>
+</div>
+
+<div class="rv" style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 32px; border-top: 1px solid #1C3550">
+<div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 20px; font-weight: 600">Postupno</span>
+<span style="font-size: 15px; color: #A9B8C6">Svaka faza dolazi tek nakon procjene koristi, troškova i rizika.</span>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 20px; font-weight: 600">Transparentno</span>
+<span style="font-size: 15px; color: #A9B8C6">Projekt gradimo odgovorno, uz Hrvatski liječnički zbor.</span>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 20px; font-weight: 600">Održivo</span>
+<span style="font-size: 15px; color: #A9B8C6">Uvijek vodeći računa o dobrobiti djece, obitelji i zdravstvenih djelatnika.</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="o-tecaju" style="background: #F4F6F8; color: #0B1D2E; border-radius: 40px 40px 0 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 72px">
+<div class="rv" style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B4232F">Tečaj fetalne ehokardiografije</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.02em">Više od stručne edukacije</h2>
+<p style="margin: 0; max-width: 38em; color: #33475B">Tijekom proteklih godina Tečaj fetalne ehokardiografije prerastao je okvire klasične stručne edukacije. Postao je mjesto susreta liječnika različitih specijalnosti, roditelja djece s prirođenim srčanim greškama, predstavnika udruge „Veliko srce malom srcu“ i drugih stručnjaka uključenih u skrb za ovu posebno osjetljivu skupinu bolesnika.</p>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 24px 28px; background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 24px; max-width: 38em; box-sizing: border-box">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A5D70">Voditelj tečaja</span>
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 20px; font-weight: 600">Ivan Zmijanović, dr. med.</span>
+<span style="font-size: 15px; color: #4A5D70">specijalist ginekologije i opstetricije, subspecijalist fetalne medicine, predsjednik Podružnice Šibenik HLZ-a</span>
+</div>
+</div>
+<div class="rv" style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 96px; font-weight: 700; line-height: 0.9; color: #B4232F">8</span>
+<span style="font-size: 16px; color: #33475B">uspješno održanih tečajeva od 2019. godine</span>
+</div>
+<div class="card" style="display: flex; flex-direction: column; gap: 6px; padding: 28px; background: #07131F; color: #FFFFFF; border: 1px solid #07131F; border-radius: 24px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #FF8F8F">Sljedeći tečaj</span>
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 24px; font-weight: 600; line-height: 1.2">9. Tečaj fetalne ehokardiografije</span>
+<span style="font-size: 16px; color: #C9D5E0">19. – 21. studenoga 2026.<br>Amadria Park Hotel Ivan, Šibenik</span>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B4232F">Tečaj se održava pod pokroviteljstvom</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">Ministarstvo zdravstva Republike Hrvatske</li>
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">UNICEF</li>
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">Hrvatsko društvo za perinatalnu medicinu HLZ-a</li>
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">Hrvatska akademija medicinskih znanosti</li>
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">Veleučilište u Šibeniku</li>
+<li style="background: #FFFFFF; border: 1px solid #DCE2E8; border-radius: 999px; padding: 12px 20px; font-size: 16px; font-weight: 500">Udruga „Veliko srce malom srcu“</li>
+</ul>
+</div>
+</section>
+
+<section id="kontakt" style="background: #07131F; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 72px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 72px">
+<div class="rv" style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #FF8F8F">Kontakt</p>
+<h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -0.02em">Gradimo je zajedno. Recite nam što vam treba.</h2>
+<p style="margin: 0; max-width: 34em; font-size: 18px; color: #C9D5E0">Javite nam što biste na stranici željeli pronaći – kao liječnik, roditelj ili partner.</p>
+<p style="margin: 0; max-width: 34em; color: #A9B8C6; font-size: 15px">Sadržaj ove stranice informativne je naravi i ne zamjenjuje savjet liječnika.</p>
+</div>
+<div class="rv" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 0">
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 18px 0; border-top: 1px solid #1C3550">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B8C6">Voditelj tečaja</span>
+<span style="font-size: 18px; font-weight: 500">Ivan Zmijanović, dr. med.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 18px 0; border-top: 1px solid #1C3550">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B8C6">E-pošta</span>
+<span style="font-size: 18px; font-weight: 500">[E-ADRESA ZA KONTAKT]</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 18px 0; border-top: 1px solid #1C3550; border-bottom: 1px solid #1C3550">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A9B8C6">Organizator</span>
+<span style="font-size: 18px; font-weight: 500">Hrvatski liječnički zbor – Podružnica Šibenik</span>
+</div>
+</div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1200 70" preserveAspectRatio="none" style="display: block; width: 100%; height: 70px" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 40 H180 L196 40 L206 14 L220 62 L232 40 H420 L436 40 L446 14 L460 62 L472 40 H660 L676 40 L686 14 L700 62 L712 40 H900 L916 40 L926 14 L940 62 L952 40 H1200" stroke="#1C3550" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<path class="pulse-line" pathLength="100" d="M0 40 H180 L196 40 L206 14 L220 62 L232 40 H420 L436 40 L446 14 L460 62 L472 40 H660 L676 40 L686 14 L700 62 L712 40 H900 L916 40 L926 14 L940 62 L952 40 H1200" stroke="#FF7A7A" stroke-width="2.5" vector-effect="non-scaling-stroke"></path>
+</svg>
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 14px; color: #A9B8C6">
+<span>© 2026. Tečaj fetalne ehokardiografije</span>
+<span>Hrvatski liječnički zbor – Podružnica Šibenik</span>
+</div>
+</section>
+
+</div>
+</body>
+</html>
